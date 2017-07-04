@@ -1,0 +1,21 @@
+global-styling:
+  css:
+    theme:
+      css/theme.css: {}
+  dependencies:
+    - tweme/bootstrap
+
+tether:
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js: { type: external, minified: true }
+
+bootstrap:
+  css:
+    base:
+      https://fonts.googleapis.com/css?family=Patua+One: {type: external}
+      css/custom.css: {}
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - tweme/tether
